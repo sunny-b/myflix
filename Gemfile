@@ -20,15 +20,16 @@ group :development, :test do
   gem 'pry'
   gem 'pry-nav'
   gem 'rspec-rails', '2.99'
+  gem 'capybara'
 end
 
 group :test do
   gem 'database_cleaner', '1.4.1'
   gem 'shoulda-matchers', '2.7.0'
+  gem 'launchy'
   gem 'vcr', '2.9.3'
 end
 
 group :production do
   gem 'rails_12factor'
 end
-
