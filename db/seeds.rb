@@ -16,8 +16,25 @@ videos = [
   ['Futurama', 'Show about the future', '/tmp/futurama.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
   ['Monk', 'Detective Show', '/tmp/monk.jpg', '/tmp/monk_large.jpg', 2],
   ['South Park', 'Animated show foul mouthed kids', '/tmp/south_park.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
+  ['Family Guy', 'Animated show about a typical American family', '/tmp/family_guy.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
+  ['Futurama', 'Show about the future', '/tmp/futurama.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
+  ['Monk', 'Detective Show', '/tmp/monk.jpg', '/tmp/monk_large.jpg', 2],
+  ['South Park', 'Animated show foul mouthed kids', '/tmp/south_park.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
+  ['Family Guy', 'Animated show about a typical American family', '/tmp/family_guy.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
+  ['Futurama', 'Show about the future', '/tmp/futurama.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
+  ['Monk', 'Detective Show', '/tmp/monk.jpg', '/tmp/monk_large.jpg', 2],
+  ['South Park', 'Animated show foul mouthed kids', '/tmp/south_park.jpg', "http://dummyimage.com/665x375/000000/00a2ff", 1],
 ]
 
 videos.each do |title, description, small_cover_url, large_cover_url, category_id|
   Video.create!(title: title, description: description, small_cover_url: small_cover_url, large_cover_url: large_cover_url, category_id: category_id)
+end
+
+users = [
+  ['sunny@example.com', 'sunny', 'Sunny B'],
+  ['iris@example.com', 'iris', 'Iris S'],
+]
+
+users.each do |email, password, name|
+  User.create!(email: email, password: password, name: name)
 end

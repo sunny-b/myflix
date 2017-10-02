@@ -1,0 +1,7 @@
+- if item.errors.any?
+  .row
+    .alert.alert-error
+      %h5 Please fix the following errors:
+      %ul
+        - item.errors.full_messages.each do |error|
+          %li= error
